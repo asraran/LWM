@@ -7,6 +7,7 @@
     font-style: normal;
 }
 
+/* 
 @media (max-width 840px) {
     .banner .luvlogo .logosmall .logobig {
         max-width: 100%;
@@ -17,27 +18,29 @@
 }
 
 @media (max-width 640px) {
-    .banner .luvlogo .logosmall .logobig {
+    .banner, .luvlogo, .logosmall, .logobig, {
         max-width: 100%;
-        height: auto;
         margin: auto;
         padding: 20px 20px;
     }
+} */
+
+p {
+    font-size: 0.7rem;
 }
 
-/* @media (min-width 641px) {
-    .banner .luvlogo .logosmall .logobig {
-        width: 100%;
-        margin: auto;
-        padding: 0 20px;
+@media (min-width: 640px) {
+    p {
+        font-size: 1.25rem;
     }
-} */
+}
 
 body {
     font-family: "monumentextended-light-webfont";
     color: black;
     font-size: 1.25rem;
     text-align: center;
+    margin: 0;
 }
 
 .bg-primary {
@@ -45,15 +48,28 @@ body {
 }
 
 .logosmall {
-    margin-top: 4%;
-    margin-bottom: 4%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+@media (min-width:640px) {
+    .logosmall {
+        margin-top: 4%;
+        margin-bottom: 4%;
+    }
 }
 
 .banner {
     object-fit: cover;
     max-width: 100%;
     min-width: 100vw;
-    height: auto;
+    height: 66vh;
+}
+
+@media (min-width:640px) {
+    .banner {
+        height: auto;
+    }
 }
 
 a {
@@ -61,20 +77,36 @@ a {
     text-decoration: none;
 }
 
-.luvlogo {
+.luvlogo img {
     justify-content: center;
-    max-height: 150px;
-    margin-top: 10%;
-    margin-bottom: 5%;
+    max-height: 90px;
+    padding: 20px 20px;
+}
+
+@media (min-width:640px) {
+    .luvlogo img {
+        max-height: 150px;
+        justify-content: center;
+        margin-top: 5%;
+        padding: 15px 15px;
+    }
 }
 
 p {
-    margin-top: 7%;
+    margin-top: 15%;
+    margin-bottom: 15%;
+}
+
+@media (min-width:640px) {
+    p {
+        margin-top: 7%;
+        margin-bottom: 7%;
+    }
 }
 
 .logobig {
     max-width: 1000px;
-    margin-top: 18%;
+    margin-top: 10%;
     margin-bottom: 5%;
     margin-right: 3%;
     margin-left: 3%;
