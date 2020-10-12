@@ -92,6 +92,14 @@ a {
     }
 }
 
+.upscale {
+    transition: transform 0.1s ease;
+}
+
+.upscale:hover {
+    transform: scale(1.1);
+}
+
 p {
     margin-top: 19%;
     margin-bottom: 15%;
